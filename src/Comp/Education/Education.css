@@ -1,0 +1,31 @@
+.flex-container
+{
+  min-height: 130px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-around;
+  background-color: rgb(64, 91, 114);
+  border-bottom: 1px solid;
+  width: 100%;
+}
+
+.flex-item
+{
+  background-color: rgb(49, 49, 49);
+  width: 10rem;
+  height: 70px;
+  margin: 10px 0;
+  border-radius: 5%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-item p {
+  color: aliceblue;
+  margin-top: 0.5rem;
+
+}
