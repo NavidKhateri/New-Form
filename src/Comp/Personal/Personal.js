@@ -190,7 +190,7 @@ const Personal = ({ myState, setMyState }) => {
           <div>
             <label>تلفن</label>
             <input
-              type="text"
+              type="number"
               name="name"
               required
               onChange={(e) => setTel(e.target.value)}
@@ -247,7 +247,7 @@ const Personal = ({ myState, setMyState }) => {
           </div>
 
           <Button
-            style={{ width: "10%", height: "80px" }}
+             style={{ width: "20%", height: "50px", margin: "10px" }}
             onClick={saveData}
             disabled={
               name &&

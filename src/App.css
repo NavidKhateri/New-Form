@@ -142,8 +142,8 @@ select {
 
 .checkbox input,
 .children input {
-    width: 5vh;
-    height: 5vh;
+    width: 2em;
+    height: 2em;
     margin: 5px 10px 0 0;
     cursor: pointer;
 

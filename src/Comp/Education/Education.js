@@ -74,7 +74,7 @@ const Education = ({ myState, setMyState }) => {
           <div>
             <label> معدل </label>
             <input
-              type="text"
+              type="number"
               name="name"
               required
               className="input02"
@@ -144,10 +144,10 @@ const Education = ({ myState, setMyState }) => {
                 <div className="flex-item">
                   <Button
                     variant="danger"
-                    style={{ height: "100%" }}
+                    
                     onClick={() => deleteProductHandler(i.maghta)}
                   >
-                    <i className="fa fa-trash  fa-2x" aria-hidden="true"></i>
+                    <i className="fa fa-trash" aria-hidden="true"></i>
                   </Button>
                 </div>
               </div>

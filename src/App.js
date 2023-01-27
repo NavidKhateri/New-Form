@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import { Alert, Container } from "react-bootstrap";
 
@@ -28,7 +27,7 @@ function App() {
   console.log(myState);
 
   return (
-    <Router>
+    <>
       <Header />
 
       <main className="py-3 mainn">
@@ -70,14 +69,16 @@ function App() {
                     type="checkbox"
                     name="checkbox"
                     onChange={(e) => setGhanon2(e.target.checked)}
-                  />
-                 {" "}  <span style={{ color: "black" }}>قوانین سایت را میپذیرم</span>
+                  />{" "}
+                  <span style={{ color: "black" }}>قوانین سایت را میپذیرم</span>
                 </div>
               </fieldset>
               <button
                 onClick={(e) => sendAllDataToBackend(e)}
                 disabled={ghanon1 && ghanon2 ? false : true}
-                style={{ backgroundColor: ghanon1 && ghanon2 ? '#99ff00' : '#8ebf00'}}
+                style={{
+                  backgroundColor: ghanon1 && ghanon2 ? "#99ff00" : "#8ebf00",
+                }}
               >
                 ارسال
               </button>
@@ -87,7 +88,7 @@ function App() {
       </main>
 
       <Footer />
-    </Router>
+    </>
   );
 }
 

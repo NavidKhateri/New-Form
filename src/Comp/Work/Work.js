@@ -114,8 +114,8 @@ const Work = ({myState, setMyState} ) => {
                   <p>{i.shomare} </p>
                 </div>
                 <div className="flex-item">
-                  <Button variant="danger" style={{height:'100%'}} onClick={() => deleteProductHandler(i.nameSherkat)}>
-                  <i className="fa fa-trash  fa-2x" aria-hidden="true"></i>
+                  <Button variant="danger"  onClick={() => deleteProductHandler(i.nameSherkat)}>
+                  <i className="fa fa-trash" aria-hidden="true"></i>
                   </Button>
                 </div>
               </div>
